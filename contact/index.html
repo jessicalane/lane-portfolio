@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jessica Lane - Contact</title>
+	<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+	<script src="../button.js"></script>
+
+</head>
+<body>
+	<h1>Jessica Lane</h1>
+
+	<nav>
+		<ul id="navigation">
+			<li><a href="../index.html">HOME</a></li>
+			<li><a href="../about/index.html">ABOUT</a></li>
+			<li><a href="index.html">CONTACT</a></li>
+		</ul>
+	</nav>
+
+	<form action="feedback.php" method="post">
+		<fieldset id="contact">
+			<legend>
+				Contact Jessica:
+			</legend>
+			<div class="feedback">
+				<label for="name" class="title">
+					Your Name:
+				</label>
+				<input type="text" name="name" maxlength="50" required="required" id="name">
+			</div>
+
+			<div class="feedback">
+				<label for="email" class="title">
+					Your E-Mail Address:
+				</label>
+				<input type="email" name="email" maxlength="50" required="required" id="email">
+			</div>
+
+			<div class="feedback">
+				<label for="comments" class="title">
+					Your Comments:
+				</label>
+				<textarea placeholder="Please enter your comments here."></textarea>
+			</div>
+		</fieldset>
+	<br />
+		<fieldset>
+			<legend>
+				Your Experience:
+			</legend>
+			<div class="feedback">
+					<label for="experience" class="rating">
+						How would you rate your experience today?
+					</label>
+					<input type="radio" name="experience" value="Excellent">Excellent <br />
+					<input type="radio" name="experience" value="Satisfactory">Satisfactory <br />
+					<input type="radio" name="experience" value="Bad">Bad
+
+			</div>
+		</fieldset>
+			<div id="submit">
+				<input type="submit" value="Submit">
+			</div>
+	
+			<div id="java">
+				<label for="favcolor">
+						What is your favorite color?
+				</label>
+					<input type = "text" id="favcolor" />
+					<button onclick="favoriteColor(favcolor.value)">Submit</button>
+			</div>
+			
+		</form>
+</body>
+</html>
