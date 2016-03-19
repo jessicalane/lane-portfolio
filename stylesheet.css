@@ -1,52 +1,60 @@
-/* For mobile phones: */
 [class*="col-"] {
-    width: 100%;
+    float: left;
+    padding: 5px;
 
 }
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-    h1 {font-size: 60px;}
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    h1 {font-size: 60px;}
+
+
+* {
+    box-sizing: border-box;
 }
 
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (max-width: 500px) {
+    [class*="col-"] {
+    	width: 100%;
+    }
+}
+
+img {
+	width: 100%;
+}
+
+.centered {
+	float: none;
+	display: inline-block;
+}
 
 
 body {
 	background-image: url("images/geometry.png");
 	font-family: 'Quattrocento Sans', sans-serif;
+	margin: auto;
+	text-align: center;
 }
 
 h1 {
 	text-align: center;
 	font-family: 'Comfortaa', Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 3em;
 	font-weight: bold;
 	margin: auto;
 }
@@ -75,13 +83,12 @@ a:hover {
 }
 
 nav li {
-	display: inline;
 	background-color: rgba(112, 128, 144, 0.3);
 	padding: 0px 5px 0px 5px;
 	font-size: 22px;
 	font-family: 'Comfortaa', Helvetica, sans-serif;
-
 	border-radius: 5px;
+	border: 2px groove threedface;
 }
 
 nav {
@@ -154,7 +161,7 @@ blockquote {
 /*Contact Page*/
 
 fieldset {
-	width: 400px;
+	width: 100%;
 	display: block;
 	margin: auto;
 	background: rgba(187, 195, 204, .4);
@@ -166,10 +173,9 @@ fieldset {
 }
 
 #submit {
-	width: 400px;
 	margin: auto;
 	text-align: right;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 input[type=submit]{
@@ -180,13 +186,16 @@ input[type=submit]{
 }
 
 input[type=text], input[type=email] {
-	width: 200px;
+	width: 50%;
 	border-radius: 5px;
 }
 
+input[type=email] {
+	margin-top: 5px;
+}
 
 textarea {
-	width: 200px;
+	width: 50%;
 	height: 80px;
 	border-radius: 5px;
 	font-size: 12px;
@@ -194,7 +203,7 @@ textarea {
 
 
 .feedback {
-	width: 400px;
+	width: 100%;
 	margin-bottom: 10px;
 }
 
@@ -207,13 +216,22 @@ textarea {
 
 .rating {
 	float: left;
-	width: 150px;
+	width: 100%;
 	text-align: left;
-	padding-right: 50px;
-	padding-left: 20px;
+	padding: 10px 10px 10px 10px;
 }
 
 #java {
 	margin-top: 25px;
 	text-align: center;
+}
+
+.legend {
+	text-align: left;
+	margin-left: 5px;
+}
+
+.radio {
+	text-align: left;
+	padding-left: 30px;
 }
