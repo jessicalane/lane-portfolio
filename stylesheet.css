@@ -4,7 +4,6 @@
 
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -27,12 +26,6 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
-@media screen and (max-width: 500px) {
-    [class*="col-"] {
-    	width: 100%;
-    }
-}
 
 img {
 	width: 100%;
@@ -234,4 +227,10 @@ textarea {
 .radio {
 	text-align: left;
 	padding-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    [class*="col-"] {
+    	width: 100%;
+    }
 }
